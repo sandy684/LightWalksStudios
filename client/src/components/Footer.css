@@ -1,0 +1,89 @@
+footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+footer h2,
+footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer .socials {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}
+
+footer .socials a {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #1da1f2;
+}
+
+footer .bottom-text {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #333;
+  margin-top: 25px;
+  padding-top: 15px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer .footer-container {
+    grid-template-columns: 1fr; /* Stack columns */
+    text-align: center;
+  }
+
+  footer .socials {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-container {
+    grid-template-columns: 1fr 1fr; /* Two columns on tablet */
+  }
+}
